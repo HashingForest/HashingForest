@@ -1,0 +1,189 @@
+
+/* Container Helper Classes */
+
+.container {
+    @include container;
+}
+
+.container-desktop {
+    @include containerDesktop;
+}
+
+.container-tablet {
+    @include containerTablet;
+}
+
+
+/* Color Helper Classes */
+
+.color-primary {
+    color: $colorPrimary;
+}
+
+.color-primary-dark {
+    color: $colorPrimaryDark;
+}
+
+.color-primary-darker {
+    color: $colorPrimaryDarker;
+}
+
+.color-primary-darkest {
+    color: $colorPrimaryDarkest;
+}
+
+.color-primary-light {
+    color: $colorPrimaryLight;
+}
+
+.color-primary-lighter {
+    color: $colorPrimaryLighter;
+}
+
+.color-primary-lightest {
+    color: $colorPrimaryLightest;
+}
+
+.color-highlight {
+    color: $colorHighlight;
+}
+
+.color-highlight-dark {
+    color: $colorHighlightDark;
+}
+
+.color-highlight-darker {
+    color: $colorHighlightDarker;
+}
+
+.color-highlight-darkest {
+    color: $colorHighlightDarkest;
+}
+
+.color-highlight-light {
+    color: $colorHighlightLight;
+}
+
+.color-highlight-lighter {
+    color: $colorHighlightLighter;
+}
+
+.color-highlight-lightest {
+    color: $colorHighlightLightest;
+}
+
+.color-gray {
+    color: $colorGray;
+}
+
+.color-gray-dark {
+    color: $colorGrayDark;
+}
+
+.color-gray-darker {
+    color: $colorGrayDarker;
+}
+
+.color-gray-darkest {
+    color: $colorGrayDarkest;
+}
+
+.color-gray-light {
+    color: $colorGrayLight;
+}
+
+.color-gray-lighter {
+    color: $colorGrayLighter;
+}
+
+.color-gray-lightest {
+    color: $colorGrayLightest;
+}
+
+
+/* Background Color Helper Classes */
+
+.background-primary {
+    background: $colorPrimary;
+}
+
+.background-primary-dark {
+    background: $colorPrimaryDark;
+}
+
+.background-primary-darker {
+    background: $colorPrimaryDarker;
+}
+
+.background-primary-darkest {
+    background: $colorPrimaryDarkest;
+}
+
+.background-primary-light {
+    background: $colorPrimaryLight;
+}
+
+.background-primary-lighter {
+    background: $colorPrimaryLighter;
+}
+
+.background-primary-lightest {
+    background: $colorPrimaryLightest;
+}
+
+.background-highlight {
+    background: $colorHighlight;
+}
+
+.background-highlight-dark {
+    background: $colorHighlightDark;
+}
+
+.background-highlight-darker {
+    background: $colorHighlightDarker;
+}
+
+.background-highlight-darkest {
+    background: $colorHighlightDarkest;
+}
+
+.background-highlight-light {
+    background: $colorHighlightLight;
+}
+
+.background-highlight-lighter {
+    background: $colorHighlightLighter;
+}
+
+.background-highlight-lightest {
+    background: $colorHighlightLightest;
+}
+
+.background-gray {
+    background: $colorGray;
+}
+
+.background-gray-dark {
+    background: $colorGrayDark;
+}
+
+.background-gray-darker {
+    background: $colorGrayDarker;
+}
+
+.background-gray-darkest {
+    background: $colorGrayDarkest;
+}
+
+.background-gray-light {
+    background: $colorGrayLight;
+}
+
+.background-gray-lighter {
+    background: $colorGrayLighter;
+}
+
+.background-gray-lightest {
+    background: $colorGrayLightest;
+}
+

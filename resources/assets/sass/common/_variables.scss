@@ -1,0 +1,64 @@
+
+/* Font */
+
+$fontPrimary: "proxima-nova", sans-serif;
+$fontLight: 300;
+$fontRegular: 400;
+$fontBold: 700;
+
+
+/* Assets */
+
+$imagePath: '/images';
+
+
+/* Sizing and Spacing */
+
+$gutter: 30px;
+
+$breakSmallMobile: 350px;
+$breakTablet: 768px;
+$breakDesktop: 992px;
+$breakLargeDesktop: 1200px;
+
+$container: calc(100% - #{$gutter});
+$containerTablet: $breakTablet - $gutter;
+$containerDesktop: $breakDesktop - $gutter;
+$containerLargeDesktop: $breakLargeDesktop - $gutter;
+
+$headerHeight: 75px;
+$footerHeight: 50px;
+
+
+/* Colors */
+
+$colorLight: #fff;
+$colorDark: #000;
+
+$colorPrimary: #379D81;
+$colorPrimaryLight: lighten($colorPrimary, 20);
+$colorPrimaryLighter: lighten($colorPrimary, 35);
+$colorPrimaryLightest: lighten($colorPrimary, 50);
+$colorPrimaryDark: darken($colorPrimary, 10);
+$colorPrimaryDarker: darken($colorPrimary, 20);
+$colorPrimaryDarkest: darken($colorPrimary, 30);
+
+$colorHighlight: #EE743E;
+$colorHighlightLight: lighten($colorHighlight, 15);
+$colorHighlightLighter: lighten($colorHighlight, 25);
+$colorHighlightLightest: lighten($colorHighlight, 35);
+$colorHighlightDark: darken($colorHighlight, 10);
+$colorHighlightDarker: darken($colorHighlight, 20);
+$colorHighlightDarkest: darken($colorHighlight, 30);
+
+$colorGray: #999;
+$colorGrayLight: lighten($colorGray, 20);
+$colorGrayLighter: lighten($colorGray, 30);
+$colorGrayLightest: lighten($colorGray, 36);
+$colorGrayDark: darken($colorGray, 15);
+$colorGrayDarker: darken($colorGray, 25);
+$colorGrayDarkest: darken($colorGray, 40);
+
+$colorFacebook: #3B5998;
+$colorTwitter: #1DA1F2;
+$colorLinkedin: #007BB6;

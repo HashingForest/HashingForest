@@ -1,0 +1,51 @@
+.Nav {
+    &.--header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+
+        a:not(.Button) {
+            color: $colorLight;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            position: relative;
+            display: flex;
+            &:after {
+                content: '';
+                width: 0;
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: $gutter;
+                height: 3px;
+                border-radius: 2px;
+                background: $colorLight;
+                transition: all .15s ease;
+            }
+            &:hover:after {
+                width: 100%;
+                opacity: 1;
+            }
+
+            svg {
+                margin-left: 5px;
+                position: relative;
+                top: 2px;
+            }
+        }
+
+    }
+}
+
+.Nav__item {
+
+    .Nav.--header & {
+        &:not(:last-child) {
+            margin-right: $gutter;
+        }
+    }
+}

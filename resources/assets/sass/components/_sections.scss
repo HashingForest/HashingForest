@@ -1,0 +1,90 @@
+/**
+ * Home Page Sections
+ */
+
+.Section {
+    padding-top: $gutter*3;
+    padding-bottom: $gutter*3;
+
+    &.--features {
+
+    }
+
+    &.--card {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: -$gutter*4;
+
+        .Section__wrap {
+            @include containerDesktop;
+            @include shadow;
+            background: $colorLight;
+            transform: translateY(-#{$gutter*4});
+            padding: $gutter*2 $gutter;
+        }
+
+        .Section__title {
+            font-size: 28px;
+        }
+
+        .Section__paragraph {
+            max-width: $containerTablet;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    &.--center {
+        text-align: center;
+    }
+
+    &.--gradient {
+        background: linear-gradient(to bottom, #{$colorPrimaryLightest}, #{$colorLight});
+    }
+}
+
+.Section__wrap {
+    @include container;
+    > *:not(:last-child) {
+        margin-top: 0;
+        margin-bottom: $gutter;
+    }
+}
+
+.Section__title {
+    font-size: 36px;
+    padding-bottom: $gutter;
+    position: relative;
+
+    &:after {
+        content: '';
+        width: 75px;
+        height: 4px;
+        background: $colorGrayLighter;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+
+        .--center & {
+            margin: auto;
+        }
+    }
+}
+
+.Section__icon {
+    max-width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.Section__paragraph {
+    font-size: 18px;
+    line-height: 1.5em;
+}

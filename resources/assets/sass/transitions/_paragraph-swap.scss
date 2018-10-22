@@ -1,0 +1,22 @@
+
+.paragraph-swap-enter-active,
+.paragraph-swap-leave-active {
+    transition: all .15s ease
+}
+
+.paragraph-swap-enter {
+    top: 1em;
+    opacity: 0;
+    color: $colorDark;
+}
+
+.paragraph-swap-enter-to,
+.paragraph-swap-leave {
+    top: 0;
+    opacity: 1;
+}
+
+.paragraph-swap-leave-to {
+    top: -1em;
+    opacity: 0;
+}

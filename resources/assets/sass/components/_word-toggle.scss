@@ -1,0 +1,9 @@
+.WordToggle {
+    position: relative;
+    color: $colorPrimary;
+    margin-left: 10px;
+
+    > span {
+        position: absolute;
+    }
+}

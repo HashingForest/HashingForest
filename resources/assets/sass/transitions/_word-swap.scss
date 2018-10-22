@@ -1,0 +1,22 @@
+
+.word-swap-enter-active,
+.word-swap-leave-active {
+    transition: all .15s ease
+}
+
+.word-swap-enter {
+    top: 1em;
+    opacity: 0;
+    color: $colorDark;
+}
+
+.word-swap-enter-to,
+.word-swap-leave {
+    top: 0;
+    opacity: 1;
+}
+
+.word-swap-leave-to {
+    top: -1em;
+    opacity: 0;
+}

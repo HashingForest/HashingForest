@@ -1,0 +1,87 @@
+.Features {
+
+    &.--offset-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        .Features__item {
+            &:first-child {
+                transform: translate(50px, 75px)
+            }
+            &:last-child {
+                transform: translate(-50px, 75px)
+            }
+        }
+    }
+
+    &.--circle {
+
+        .Features__item {
+            height: 130px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            > *:not(.Features__bg) {
+                position: relative;
+                z-index: 10;
+            }
+
+            &:hover {
+                .Features__icon {
+                    transform: translateY(-5px) scale(1.1, 1.1);
+                }
+                .Features__bg:after {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .Features__bg {
+            z-index: 0;
+            background: $colorPrimaryLightest;
+            height: 75px;
+            width: 75px;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            &:after {
+                content: '';
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: 50%;
+                left: 50%;
+                margin: auto;
+                transform: translate(-50%, -50%);
+                background: $colorPrimaryLighter;
+                transition: width .15s ease, height .15s ease;
+                border-radius: 100%;
+            }
+        }
+
+        .Features__icon {
+            font-size: 24px;
+            margin-bottom: $gutter/4;
+            transition: transform .15s ease;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: $fontBold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    }
+}
+
